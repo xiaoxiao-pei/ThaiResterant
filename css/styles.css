@@ -1,0 +1,438 @@
+.bgr {
+  background-color: #d1e0e9;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 220px;
+}
+
+.h1-main {
+  margin: 20px;
+}
+
+.h-text {
+  padding: 12px 0;
+  margin: 0 30px;
+  color: #000;
+  font-size: 16px;
+  font-family: "Alegreya", serif;
+  letter-spacing: 2px;
+}
+
+.main-header h1 a {
+  text-decoration: none;
+}
+
+.main-header h1 a:visited {
+  color: #1098ad;
+}
+
+.main-header ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+}
+
+.main-header li a {
+  padding: 12px 0;
+  margin: 0 25px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: "Alegreya", serif;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: #1098ad;
+  font-weight: bolder;
+}
+
+.main-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 400px;
+  font-size: 30px;
+  font-family: "Alegreya", serif;
+}
+
+.cool {
+  border-radius: 25%;
+  width: 560px;
+  height: auto;
+  padding-right: 300px;
+  padding-top: 20px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 20%;
+  padding-top: 10px;
+}
+
+.container-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #000; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "Alegreya", serif;
+}
+
+.container-aboutme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #000; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "Alegreya", serif;
+}
+
+.aboutme-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  /* border: 1px solid #000; */
+}
+
+.work-icon {
+  border-radius: 10%;
+  width: 240px;
+  height: auto;
+}
+
+.work-icon:hover {
+  transform: scale(1.1);
+}
+
+.project-text {
+  font-size: 20px;
+  font-family: "Alegreya", serif;
+}
+
+.school-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #000; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-family: "Alegreya", serif;
+}
+
+.school-h2 {
+  margin: 1px;
+}
+
+.school-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #000; */
+  gap: 100px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "Alegreya", serif;
+}
+
+.school-logo {
+  border-radius: 10%;
+  width: 240px;
+  height: 70px;
+  background-color: rgb(253, 253, 253);
+}
+
+.school-logo:hover {
+  transform: scale(1.1);
+}
+
+.school-h4 {
+  margin: 1px;
+  font-size: 25px;
+  font-family: "Alegreya", serif;
+  color: #1098ad;
+}
+
+.school-h5 {
+  margin: 2px;
+  font-size: 16px;
+  font-family: "Alegreya", serif;
+}
+
+.school-h6 {
+  margin: 2px;
+  font-size: 15px;
+  font-family: "Alegreya", serif;
+  color: #545252;
+}
+
+.school-p {
+  border-radius: 2%;
+  margin: 10px;
+  font-size: 18px;
+  font-family: "Alegreya", serif;
+  /* color: #444; */
+  /* background-color: rgba(156, 195, 195, 0.195); */
+  background-color: #1098ad23;
+}
+
+.school-ol {
+  font-size: 18px;
+  font-family: "Alegreya", serif;
+  color: #444;
+}
+
+.p-size {
+  width: 600px;
+  height: auto;
+}
+
+.bot-box {
+  margin-bottom: 10px;
+}
+
+/* Xiao's codes*/
+
+/* styles for working experience
+ */
+ body.mainExperience{
+	background-color: #d1e0e9;
+}
+
+table.workExperience {
+  border-collapse: collapse;
+  margin:20px 20%;
+}
+.divExperience h1,.SkillBlock h1,.divContact h1{
+	font-family: "Alegreya", serif;
+	font-size:250%;
+	font-weight:bold;
+	letter-spacing:2px;
+	text-align:center;
+}
+/* .workExperience tr:nth-child(3),.workExperience tr:nth-child(2){
+	background-color:#ebe5ea;
+}
+
+.workExperience tr:nth-child(8),.workExperience tr:nth-child(9){
+	background-color:#ebe5ea;
+} */
+.workExperience tr:nth-child(3),.workExperience tr:nth-child(6){
+  border-bottom: 2px solid #f8f8f8;
+}
+td.year,td.tdLogo {
+  border-right: 2px solid gray;
+  padding-right: 30px;
+  text-align: right;
+  width:25%;
+}
+td.year, h2.companyName{
+	font-family: "Alegreya", serif;
+  color: #1098ad;
+}
+td.eachExperience{
+  font-family: "Alegreya", serif;
+}
+td.tdLogo {
+  vertical-align: top;
+}
+h2.companyName {
+  padding-top: 20px;
+}
+td.eachExperience {
+  padding-left: 30px;
+}
+ul.experienceList {
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+img.companyLogo {
+  width: 80px;
+}
+
+/* styles for skills */
+body.mainSkill{
+	background-color: #d1e0e9;
+}
+div.SkillBlock {
+  background-image:linear-gradient(to right, #88a7b9,#d1e0e9,#88a7b9);
+  padding:20px 20%;
+}
+div.SkillBlock h3{
+  font-family: "Alegreya", serif;
+  margin-bottom: 0;
+}
+.progressBar {
+  width: 80%;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  margin-bottom: 10;
+}
+.progress {
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  background-image: linear-gradient(to right, #1098ad, #88a7b9);
+}
+.htmlProgress {
+  width: 50%;
+}
+.cssprogress {
+  width: 60%;
+}
+.javaprogress {
+  width: 90%;
+}
+.pythonprogress {
+  width: 50%;
+}
+.javascriptprogress {
+  width: 80%;
+}
+.csharpprogress {
+  width: 70%;
+}
+.sqlprogress {
+  width: 80%;
+}
+.photoshopprogress {
+  width: 40%;
+}
+.MicrosoftOfficeprogress {
+  width: 90%;
+}
+.phpprogress {
+  width: 60%;
+}
+.linuxprogress {
+  width: 75%;
+}
+.cplusprogress {
+  width: 65%;
+}
+
+.SkillBlock ol li {
+  float: left;
+  width: 47%;
+  list-style-type: none;
+}
+
+.SkillBlock ol li:nth-child(even) {
+  float: right;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* styles for contact */
+body.mainContact{
+	background-color: #d1e0e9;
+}
+div.divContact {
+  width: 100%;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-image:linear-gradient(to right, #88a7b9,#d1e0e9,#88a7b9);
+}
+table.tableContact {
+  margin: 20px 10% 20px 25%;
+}
+td.contactinfo{
+  font-family: "Alegreya", serif;
+  font-size: 120%;
+  padding-right: 150px;
+}
+p.contactName{
+  font-size: 150%;
+  font-weight: bold;
+  font-family: 'Jura', sans-serif;
+}
+.contactinfo p{
+  padding-bottom: 3px;
+}
+
+.contacttable{
+  width: 100%;
+  margin: 5px;
+}
+input.forminput{
+  border: none;
+  border-bottom: 2px solid #0A5375;
+  border-radius: 4px;
+  height: 40px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+input.forminput:focus {
+  border: 2px solid #0A5375;
+}
+textarea{
+  width: 300px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border:none;
+  border-bottom: 2px solid #0A5375;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  resize: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+td.lable{
+  text-align: right;
+  font-family: "Alegreya", serif;
+  font-size: 120%;
+  padding-right: 5px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.contacticom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-right: 20%;
+  padding-top: 10px;
+}
+.submit{
+  padding:5px 15px; 
+  background:#ccc; 
+  border:0 none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(50, 48, 48);
+  background-color: #1098ad;
+
+  font-family: "Alegreya", serif;
+  font-size: 120%;
+  font-weight: bold;
+  margin-left: 10SK0px;
+
+}
+.contacticom a{
+  padding:5px;
+}
+/* Xiao's codes */
