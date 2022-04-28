@@ -1,13 +1,11 @@
-.bgr {
-  background-color: #d1e0e9;
-}
+
 
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
-.main-header {
+#main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,21 +26,21 @@
   letter-spacing: 2px;
 }
 
-.main-header h1 a {
+#main-header h1 a {
   text-decoration: none;
 }
 
-.main-header h1 a:visited {
+#main-header h1 a:visited {
   color: #1098ad;
 }
 
-.main-header ul {
+#main-header ul {
   list-style-type: none;
   width: 100%;
   display: flex;
 }
 
-.main-header li a {
+#main-header li a {
   padding: 12px 0;
   margin: 0 25px;
   text-decoration: none;
@@ -65,6 +63,18 @@ a:hover {
   font-size: 30px;
   font-family: "Alegreya", serif;
 }
+
+/* back to top link */
+.backlink{
+  position: fixed; 
+  right: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0A5375;
+  font-size: larger;
+}
+
 
 .cool {
   border-radius: 25%;
@@ -191,8 +201,6 @@ a:hover {
   margin: 10px;
   font-size: 18px;
   font-family: "Alegreya", serif;
-  /* color: #444; */
-  /* background-color: rgba(156, 195, 195, 0.195); */
   background-color: #1098ad23;
 }
 
@@ -211,19 +219,20 @@ a:hover {
   margin-bottom: 10px;
 }
 
+#divEducation{
+  margin-top: 40px;
+}
+
 /* Xiao's codes*/
 
 /* styles for working experience
  */
- body.mainExperience{
-	background-color: #d1e0e9;
-}
 
 table.workExperience {
   border-collapse: collapse;
   margin:20px 20%;
 }
-.divExperience h1,.SkillBlock h1,.divContact h1{
+#divExperience h1,#SkillBlock h1,#divContact h1{
 	font-family: "Alegreya", serif;
 	font-size:250%;
 	font-weight:bold;
@@ -271,16 +280,31 @@ img.companyLogo {
 }
 
 /* styles for skills */
-body.mainSkill{
-	background-color: #d1e0e9;
-}
-div.SkillBlock {
-  background-image:linear-gradient(to right, #88a7b9,#d1e0e9,#88a7b9);
+
+#SkillBlock {
   padding:20px 20%;
 }
-div.SkillBlock h3{
+#SkillBlock h3{
   font-family: "Alegreya", serif;
   margin-bottom: 0;
+}
+td.comments{
+  width:20%;
+}
+.comments div{
+  border: 2px solid #0A5375;
+  border-radius: 15px;
+  box-shadow: inset;
+  padding: 10px;
+  height: 350px;
+}
+.comments p{
+  font-family: "Alegreya", serif;
+  font-size: medium;
+}
+.comments p::first-letter{
+  font-size: 150%;
+  color: #0A5375;
 }
 .progressBar {
   width: 80%;
@@ -332,13 +356,13 @@ div.SkillBlock h3{
   width: 65%;
 }
 
-.SkillBlock ol li {
+#SkillBlock ol li {
   float: left;
   width: 47%;
   list-style-type: none;
 }
 
-.SkillBlock ol li:nth-child(even) {
+#SkillBlock ol li:nth-child(even) {
   float: right;
 }
 .clearfix:after {
@@ -348,14 +372,11 @@ div.SkillBlock h3{
 }
 
 /* styles for contact */
-body.mainContact{
-	background-color: #d1e0e9;
-}
-div.divContact {
+
+#divContact {
   width: 100%;
   padding-top:20px;
   padding-bottom:20px;
-  background-image:linear-gradient(to right, #88a7b9,#d1e0e9,#88a7b9);
 }
 table.tableContact {
   margin: 20px 10% 20px 25%;
