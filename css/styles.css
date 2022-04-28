@@ -1,4 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap');
+
+
+.bgr{
+  background-color: #d1e0e9;
+}
 
 .container {
   width: 100%;
@@ -11,10 +17,12 @@
   justify-content: space-between;
   padding-left: 300px;
   padding-right: 220px;
+  font-family: 'Radio Canada', sans-serif;
 }
 
 .h1-main {
   margin: 20px;
+  font-family: 'Radio Canada', sans-serif;
 }
 
 .h-text {
@@ -22,8 +30,8 @@
   margin: 0 30px;
   color: #000;
   font-size: 16px;
-  font-family: "Alegreya", serif;
   letter-spacing: 2px;
+  font-family: 'Radio Canada', sans-serif;
 }
 
 #main-header h1 a {
@@ -46,7 +54,6 @@
   text-decoration: none;
   color: #000;
   font-size: 16px;
-  font-family: "Alegreya", serif;
   letter-spacing: 1px;
 }
 
@@ -61,7 +68,6 @@ a:hover {
   justify-content: space-between;
   padding-left: 400px;
   font-size: 30px;
-  font-family: "Alegreya", serif;
 }
 
 /* back to top link */
@@ -78,7 +84,7 @@ a:hover {
 
 .cool {
   border-radius: 25%;
-  width: 560px;
+  width: 400px;
   height: auto;
   padding-right: 300px;
   padding-top: 20px;
@@ -93,28 +99,11 @@ a:hover {
   padding-top: 10px;
 }
 
-.container-project {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: 1px solid #000; */
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-family: "Alegreya", serif;
-}
 
-.container-aboutme {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: 1px solid #000; */
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-family: "Alegreya", serif;
+#divAboutme{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
 .aboutme-pic {
   display: flex;
   justify-content: center;
@@ -135,36 +124,34 @@ a:hover {
 
 .project-text {
   font-size: 20px;
-  font-family: "Alegreya", serif;
+  font-family: 'Radio Canada', sans-serif;
 }
 
-.school-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: 1px solid #000; */
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 30px;
-  font-family: "Alegreya", serif;
-}
 
+
+
+/* styles for education page */
 .school-h2 {
   margin: 1px;
 }
 
-.school-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: 1px solid #000; */
-  gap: 100px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-family: "Alegreya", serif;
+.education{
+  margin: 20px auto;
+  width: 70%;
+  border-collapse: collapse;
+  font-family: 'Radio Canada', sans-serif;
+}
+.schoolname{
+  text-align: right;
+  padding-right:50px;
+  border-right: 2px solid gray;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
+.schoolinfo{
+  padding-left: 50px;
+}
 .school-logo {
   border-radius: 10%;
   width: 240px;
@@ -179,49 +166,26 @@ a:hover {
 .school-h4 {
   margin: 1px;
   font-size: 25px;
-  font-family: "Alegreya", serif;
   color: #1098ad;
 }
 
 .school-h5 {
   margin: 2px;
   font-size: 16px;
-  font-family: "Alegreya", serif;
 }
 
 .school-h6 {
   margin: 2px;
   font-size: 15px;
-  font-family: "Alegreya", serif;
   color: #545252;
 }
 
-.school-p {
-  border-radius: 2%;
-  margin: 10px;
-  font-size: 18px;
-  font-family: "Alegreya", serif;
-  background-color: #1098ad23;
-}
-
-.school-ol {
-  font-size: 18px;
-  font-family: "Alegreya", serif;
-  color: #444;
-}
-
-.p-size {
-  width: 600px;
-  height: auto;
-}
-
-.bot-box {
-  margin-bottom: 10px;
-}
 
 #divEducation{
   margin-top: 40px;
 }
+
+
 
 /* Xiao's codes*/
 
@@ -231,21 +195,14 @@ a:hover {
 table.workExperience {
   border-collapse: collapse;
   margin:20px 20%;
+  font-family: 'Radio Canada', sans-serif;
 }
-#divExperience h1,#SkillBlock h1,#divContact h1{
-	font-family: "Alegreya", serif;
+#divExperience h1,#SkillBlock h1,#divContact h1,#divEducation h1{
 	font-size:250%;
 	font-weight:bold;
 	letter-spacing:2px;
 	text-align:center;
 }
-/* .workExperience tr:nth-child(3),.workExperience tr:nth-child(2){
-	background-color:#ebe5ea;
-}
-
-.workExperience tr:nth-child(8),.workExperience tr:nth-child(9){
-	background-color:#ebe5ea;
-} */
 .workExperience tr:nth-child(3),.workExperience tr:nth-child(6){
   border-bottom: 2px solid #f8f8f8;
 }
@@ -256,12 +213,9 @@ td.year,td.tdLogo {
   width:25%;
 }
 td.year, h2.companyName{
-	font-family: "Alegreya", serif;
   color: #1098ad;
 }
-td.eachExperience{
-  font-family: "Alegreya", serif;
-}
+
 td.tdLogo {
   vertical-align: top;
 }
@@ -283,9 +237,9 @@ img.companyLogo {
 
 #SkillBlock {
   padding:20px 20%;
+  font-family: 'Radio Canada', sans-serif;
 }
 #SkillBlock h3{
-  font-family: "Alegreya", serif;
   margin-bottom: 0;
 }
 td.comments{
@@ -299,7 +253,6 @@ td.comments{
   height: 350px;
 }
 .comments p{
-  font-family: "Alegreya", serif;
   font-size: medium;
 }
 .comments p::first-letter{
@@ -377,19 +330,18 @@ td.comments{
   width: 100%;
   padding-top:20px;
   padding-bottom:20px;
+  font-family: 'Radio Canada', sans-serif;
 }
 table.tableContact {
-  margin: 20px 10% 20px 25%;
+  margin: 20px auto;
 }
 td.contactinfo{
-  font-family: "Alegreya", serif;
   font-size: 120%;
   padding-right: 150px;
 }
 p.contactName{
   font-size: 150%;
   font-weight: bold;
-  font-family: 'Jura', sans-serif;
 }
 .contactinfo p{
   padding-bottom: 3px;
@@ -425,7 +377,6 @@ textarea{
 
 td.lable{
   text-align: right;
-  font-family: "Alegreya", serif;
   font-size: 120%;
   padding-right: 5px;
   padding-top:20px;
@@ -446,8 +397,6 @@ td.lable{
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(50, 48, 48);
   background-color: #1098ad;
-
-  font-family: "Alegreya", serif;
   font-size: 120%;
   font-weight: bold;
   margin-left: 10SK0px;
