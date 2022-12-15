@@ -1,432 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>I'm Aiden</title>
-  </head>
-  <body class="bgr">
-    <div class="container">
-      <header id="main-header">
-        <h1 class="h-text"><a href="index.html">AIDEN</a></h1>
-
-        <nav>
-          <ul>
-            <li>
-              <a href="#divAboutme">ABOUT ME</a>
-            </li>
-            <li>
-              <a href="#divEducation">EDUCATION</a>
-            </li>
-            <li>
-              <a href="#divExperience">WORK EXPERIENCE</a>
-            </li>
-            <li>
-              <a href="#SkillBlock">SKILLS</a>
-            </li>
-            <li>
-              <a href="#divContact">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Navigation bar ends here -->
-      </header>
-
-      <a href="#main-header" class="backlink">Back to Top</a>
-
-      <div class="main-body">
-        <div>
-          <h1 class="h1-main">Hey there!</h1>
-          <h1 class="h1-main">I'm Aiden</h1>
-          <h1 class="h1-main">A Full Stack Developer</h1>
-        </div>
-        <div>
-          <img src="images/male-4494495_640.jpg" alt="selfie" class="cool" />
-        </div>
-
-      </div>
-
-      <!-- all about me -->
-      <div id="divAboutme">
-        <div class="aboutme-pic">
-        <div class="pic-1">
-          <a href="https://www.airbnb.ca/" target="_blank">
-            <img
-              src="images/backpack-1849132_640.png"
-              alt=""
-              class="work-icon"
-            />
-          </a>
-          <center>
-            <p class="project-text"><strong>Airbnb</strong></p>
-          </center>
-        </div>
-        <div>
-          <a href="https://www.vpl.ca/" target="_blank">
-            <img
-              src="images/books-1673578_640.png"
-              alt=""
-              class="work-icon"
-            />
-          </a>
-          <center>
-            <p class="project-text"><strong>VPL Library</strong></p>
-          </center>
-        </div>
-        <div class="el-4">
-          <a href="https://kids.nationalgeographic.com/science" target="_blank">
-            <img
-              src="images/chemistry-2389151_640.png"
-              alt=""
-              class="work-icon"
-            />
-          </a>
-          <center>
-            <p class="project-text"><strong>Sci-Lab</strong></p>
-          </center>
-        </div>
-      </div>
-
-      <div class="aboutme-pic">
-        <div class="el-3">
-          <a href="https://www.crewcollectivecafe.com/" target="_blank">
-            <img src="images/cup-1849083_640.png" alt="" class="work-icon" />
-          </a>
-          <center>
-            <p class="project-text"><strong>Crew Cafe</strong></p>
-          </center>
-        </div>
-        <div>
-          <a href="https://centrerecreatifzone15.ca/en/" target="_blank">
-            <img
-              src="images/joystick-2389216_640.png"
-              alt=""
-              class="work-icon"
-            />
-          </a>
-          <center>
-            <p class="project-text"><strong>Zone 15</strong></p>
-          </center>
-        </div>
-        <div class="el-4">
-          <a href="https://backpackeroutdoors.com/" target="_blank">
-            <img
-              src="images/mountain-1849091_640.png"
-              alt=""
-              class="work-icon"
-            />
-          </a>
-          <center>
-            <p class="project-text"><strong>Backpacker</strong></p>
-          </center>
-        </div>
-      </div>
-
-      </div>
-
-
-
-      <!-- education -->
-      <div id="divEducation">
-        <table class="education">  
-          <tr>
-            <td colspan="2"><h1>Education</h1></td>
-          </tr>
-          <!-- Concordia -->
-          <tr>
-            <td class="schoolname">
-              <a href="https://www.concordia.ca/" target="_blank">
-                <img src="images/concordia-logo.webp" alt="Concordia logo" class="school-logo">
-              </a>
-            </td>
-            <td class="schoolinfo">
-              <h4 class="school-h4">Concordia Univeristy</h4>
-              <h5 class="school-h5">B.S. in Computer Science, earned April 2022</h5>
-              <h6 class="school-h6">Montreal, QC</h6>
-            </td>
-          </tr>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tissy's Bistro</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/logo_icon.png"/>
         
+    <!-- links for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/642f8537bc.js" crossorigin="anonymous"></script>
 
-          <!-- Saint-Laurent Cégep -->
-          <tr></tr>
-          <tr>
-            <td class="schoolname">
-              <a href="https://www.cegepsl.qc.ca/">
-                <img src="images/CSL-logo.png" alt="CSL logo" class="school-logo">
-               </a>
-            </td>
-            <td class="schoolinfo" >
-              <h4 class="school-h4">Saint-Laurent Cégep</h4>
-              <h5 class="school-h5">DEC in Science, obtained June 2019</h5>
-              <h6 class="school-h6">Jan 2017 - Sep 2019</h6>
-            </td>
-          </tr>
-         
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      
+    <!-- css style sheets -->
+    <link rel="stylesheet" href="styles/styles.css"> 
+      
+    <!-- link for css compiled by scss -->
+    <link rel="stylesheet" href="styles/main.css" rel="stylesheet"/>
+    <script src="scripts/menu.js" defer></script>
 
-          <!-- Royal West High School -->
-          <tr></tr>
-          <tr></tr>
-          <tr></tr>
-          <tr>
-            <td class="schoolname">
-              <a href="http://www.royalwestacademy.com/">
-                <img
-                src="images/royalwest.jpg"
-                alt="Royal West High School"
-                class="school-logo"
-                />
-               </a>
-            </td>
-            <td class="schoolinfo" >
-                <h4 class="school-h4">Royal West High School</h4>
-                <h5 class="school-h5">High School Diploma, GPA 4.0</h5>
-                <h6 class="school-h6">Class of 2013</h6>
-            </td>
-          </tr>
-        </table>
+    <!-- links for icon -->
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">      
+  </head>
+  <body style="background-image:url(images/Hero.jpg); background-attachment: fixed; background-repeat: no-repeat;">    
+    <section id="title">
+
+    <div>
+<!-- Header -->
+<header class="sticky-md-top pb-4" id="header" style="background-color:#ffcbd3b7">
+  <div>
+<!-- Top Banner -->
+      <div width="100%" style="top:0px; background-color:#371e17e4; height: 28px; overflow:hidden;">
+          <a href="address.html" target="_blank" 
+              style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;
+              padding-left:24.5%;">
+              <i class="fas fa-map-marked-alt fa-lg" style="text-overflow:clip;"></i> 
+              &nbsp;132 Avenue St Louis, Beaconsfield, QC
+          </a>
+          <a href="https://www.facebook.com/TissyBistro/" target="_blank" 
+              style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+              <i class="fab fa-facebook-square fa-lg" style="overflow:hidden;"></i> 
+              &nbsp;@TissyBistro 
+           </a>  
+           <a href="#header"
+              style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+              <i class="fas fa-phone" style="overflow:hidden;"></i> 
+              &nbsp;438-725-5512
+           </a>   
+           <a href="#header"
+              style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+              <i class="fas fa-clock"></i>
+              &nbsp;Opening Hours: 11:00 AM ~ 6:00 PM
+           </a>   
       </div>
-
-
-
-      <!-- work experience -->
-      <div id="divExperience">
-        <table class="workExperience">
-
-          <!-- experience in Zealous System -->
-          <tr>
-            <td colspan="2"><h1>WORK EXPERIENCE</h1></td>
-          </tr>
-          <tr>
-            <td class="year">Mar 2018 - present</td>
-            <td class="eachExperience" rowspan="2">
-              <h2 class="companyName">Zealous System</h2>
-              <h3 class="jobTitle">Senior full stack developer</h3>
-              <ul class="experienceList">
-                <li>Increase company revenue by 10% within 2 months after developing and implementing business logic for over 20 features.</li>
-                <li>Worked with Core Java to develop automated solutions to include web interfaces using HTML,CSS,JavaScript and Web services.</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="tdLogo"><img class="companyLogo" src="https://www.zealousys.com/wp-content/themes/zealous/images/logo-new.png" alt="zealous" title="Zealous System"></td>
-          </tr>
-
-          <!-- experience in DOIT Software -->
-          <tr></tr>
-          <tr>
-            <td class="year">Sep 2015 - Mar 2018</td>
-            <td class="eachExperience" rowspan="2">
-              <h2 class="companyName">DOIT Software</h2>
-              <h3 class="jobTitle">Junior full stack developer</h3>
-              <ul class="experienceList">
-                <li>Designed and developed UI design for over 5 clients by using HTML, CSS, ASP.NET, Vue, and React.</li>
-                <li>Worked with Core Java to develop automated solutions to include web interfaces using HTML,CSS,JavaScript and Web services.</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="tdLogo"><img class="companyLogo" src="https://goodfirms-prod.s3.amazonaws.com/services/general/doit-software.png" lsrc="https://goodfirms-prod.s3.amazonaws.com/services/general/doit-software.png"  alt="DOIT Software" class=""></td>
-          </tr>
-
-          <!-- experience in BrancoSoft Private Limited -->
-          <tr></tr>
-          <tr>
-            <td class="year">Jul 2012 - Sep 2015</td>
-            <td class="eachExperience" rowspan="2">
-              <h2 class="companyName">BrancoSoft Private Limited</h2>
-              <h3 class="jobTitle">Mobile developer</h3>
-              <ul class="experienceList">
-                <li>Collecting Requirements and comunicate with customers.</li>
-                <li>Designed and built applications for iOS and Android.</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="tdLogo"><img class="companyLogo" src="https://brancosoft.com/images/logo.png" alt="Logo" class="mega-white-logo"></td>
-          </tr>
-        </table>
+          <a href="fr/menu.html" 
+              style="color: #d9d4a6; text-decoration: none; font-weight:bold; font-size: larger;
+              position: absolute; right: 0%; top: 0%; margin-top: 0px; vertical-align: top; background-color: #371e17; 
+              padding-right:10px; padding-left: 10px; height: 28px;">
+              Fran&#231;ais
+          </a>
+<!-- Logo and Page Selection -->
+      <div>
+<!-- Logo -->
+          <a class="navbar-brand" href="index.html"><img src="images/logoSmall.png" alt="Tissy's Bistro" height=132px 
+          style="position:absolute; margin-top: 2px; left:0%;"></a>
+          <div style="margin-left: 160px; padding-top:30px; padding-bottom: 25px;">
+<!-- Navigation (Page Selection)-->
+          <nav class="navbar navbar-expand-lg">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+              style=" border-color:#371e17e4; margin-top: 22px;">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+      <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+        <ul class="navbar-nav fs-4 fw-bold" style="width:55%; text-align:center; margin-left: -13px;" >
+          <li class="nav-item" style = "font-size: 75%; padding: 5px; margin: 10px;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+              <a class="nav-link active" aria-current="page" href="index.html"
+              style="color:#000000c2" onMouseOver="this.style.color='#888147'" onMouseOut="this.style.color='#000000c2'">HOME</a>
+          </li>
+          <li class="nav-item" style = "font-size: 75%; padding: 5px; margin: 10px;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+              <a class="nav-link" href="menu.html"
+              style="color:#5d5d5dda" onMouseOver="this.style.color='#371e17e4'" onMouseOut="this.style.color='#5d5d5dda'">MENU</a>
+          </li>
+          <li class="nav-item" style = "font-size: 75%; padding: 5px; margin: 10px;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+              <a class="nav-link" href="reservation.html"
+              style="color:#5d5d5dda" onMouseOver="this.style.color='#371e17e4'" onMouseOut="this.style.color='#5d5d5dda'">RESERVATION</a>
+          </li>
+          
+          <li class="nav-item" style = "font-size: 75%; padding: 5px; margin: 10px;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+              <a class="nav-link" href="about_us.html"
+              style="color:#5d5d5dda" onMouseOver="this.style.color='#371e17e4'" onMouseOut="this.style.color='#5d5d5dda'">ABOUT</a>
+          </li>
+      </ul>
       </div>
+  </nav>  
+</div>
 
-      <!-- skills -->
-      <div id="SkillBlock">	
-        <div><h1>SKILLS</h1>
-          <table>
-            <tr>
-              <td class="comments">
-                <div>
-                  <p>"Aiden build great relationships, and this is reflected by how highly his team speaks of you."</p>
-                  <p>"He act as a go-to member for new employees by offering feedback, guidance and sharing ideas and techniques for improvement."</p>
-                  <p>"A good employee inspires his or her boss. Thanks for being my inspiration."</p>
-                </div>
-              </td>
-              <td>
-                <div class="skills">
-                  <ol class="clearfix">
-                    <li>
-                      <h3>HTML</h3>
-                      <div class="progressBar">
-                        <div class="progress htmlProgress">
-                        </div> 
-                      </div>
-                    </li>
-                    <li>
-                      <h3>CSS</h3>
-                      <div class="progressBar">
-                        <div class="progress cssprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>Java</h3>
-                      <div class="progressBar">
-                        <div class="progress javaprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>JavaScript</h3>
-                      <div class="progressBar">
-                        <div class="progress javascriptprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>Python</h3>
-                      <div class="progressBar">
-                        <div class="progress pythonprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>C#</h3>
-                      <div class="progressBar">
-                        <div class="progress csharpprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>SQL</h3>
-                      <div class="progressBar">
-                        <div class="progress sqlprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>Photoshop</h3>
-                      <div class="progressBar">
-                        <div class="progress photoshopprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>MicrosoftOffice</h3>
-                      <div class="progressBar">
-                        <div class="progress MicrosoftOfficeprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>PHP</h3>
-                      <div class="progressBar">
-                        <div class="progress phpprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>Linux/Ubantu</h3>
-                      <div class="progressBar">
-                        <div class="progress linuxprogress">
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <h3>C++</h3>
-                      <div class="progressBar">
-                        <div class="progress cplusprogress">
-                        </div>
-                      </div>
-                    </li>
-                  </ol>
-                </div>
-              </td>
-              <td class="comments">
-                <div>
-                  <p>"Aiden have shown a practical approach to solving problems by breaking down large concepts into smaller, more manageable tasks.”</p>
-                  <p>"One of Aiden's greatest strengths is his ability to manage multiple responsibilities.”</p>
-                  <p>"I am so grateful to work with Aiden every day. His continued support and all of the help he provided on our project was invaluable."</p>
-                </div>
-              </td>
-            </tr>
-          </table>
-  
+<!-- Checkout Icon -->
+<a href="checkout.html"
+style="color: #371e17e4; background-color: rgba(255, 255, 255, 0.703); padding: 24px; border-radius: 10px;
+position: absolute; right: 30px; top:65px;">
+<i class="fas fa-shopping-cart fa-2x"></i>
+</a>             
+</div>        
+</div>
+
+<!-- back to top -->
+      <a href="#top" id="backlink" class=" icon" style="color: #371e17e4;"><i class="fas fa-angle-double-up fa-3x"></i></a>    
+  </header>  
+
+  <main id="top" style="background-color:#fff8bca7;">
+<div class="container position-relative rounded shadow" id="header_image">
+          <div id="div-title" class="position-absolute top-50 start-50 translate-middle bg-light bg-opacity-75 p-3 rounded-4 shadow text-center">
+              <h1 class="fs-1" >Tissy's Bistro</h1>
+          </div>
+      </div> 
+<!-- showcase -->
+
+<section id="showcase" class="container-fluid">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/Hero.jpg" alt="First slide">
       </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Chicken_Satay.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Green_Curry_Chicken.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Laab_Moo.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Pad_Thai_Shrimp.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Pork_Barbeque.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Rice.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Roast_Duck_Thai_Style.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Shrimp_Fried_Rice.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Som_Tum.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Spring_Roll.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Spring_Roll_Option.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Stirfried_Pork_With_Basil_Krapao_moo_Kai_Dao.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Tom_Kha_Kai.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Tom_Yum_Kung.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Wonton_Soup.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+<!-- social media news -->
+
+<section>
+    <div class="container pb-3 p-3 mb-3">
+        <div class="tablette container container-sm container-md container-lg">
+          <iframe class="facebook" d-sm-flex align-item-center justify-content-between src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTissyBistro%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="375" height="500" overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>          
+        </div>
+  </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer width="100%" style="background-color:#371e17e4; text-overflow: ellipsis; height: 40px;">
+      <a href="terms_conditions.html" target="_blank" 
+          style= "margin: 25px; margin-top: 50px; vertical-align: sub;
+          color: #d9d4a6; text-decoration: none; font-size: large;">
+          -&nbsp;Terms & Conditions&nbsp;-
+      </a>
+      <a href="privacy.html" target="_blank" 
+          style="margin: 25px; vertical-align: sub; 
+          color: #d9d4a6; text-decoration: none; font-size: large;">
+          -&nbsp;Privacy Policy&nbsp;-
+       </a>  
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"></script>
+    
+</body>
 
 
-    <!-- contact -->
-    <div id="divContact">
-			<table class="tableContact">
-				<tr>
-					<td colspan="2"><h1>CONTACT ME</h1><td>
-				</tr>
-				<tr>
-					<td class="contactinfo">
-						<p class="contactName">Aiden</P>
-						<p>Full stack developer</P>
-						<p>Tel<br>514-123-1234</P>
-						<p>Email<br>John@smith.net</P>
-					</td>
-					<td rowspan="2">
-						<form class="contactForm">
-							<table class="contacttable">
-								<tr>
-									<td class="lable">Full Name:</td>
-									<td><input class="forminput" type="text" name="name" placeholder="Enter full name"></td>
-								</tr>
-								<tr>
-									<td class="lable">Email:</td>
-									<td><input class="forminput" type="text" name="email" placeholder="Enter email addess"></td>
-								</tr>
-								<tr>
-									<td class="lable">Phone:</td>
-									<td><input class="forminput" type="text" name="phone" placeholder="Enter phone number"></td>
-								</tr>
-								<tr>
-									<td class="lable">Message:</td>
-									<td><textarea class="forminput" name="message" placeholder="Your Comment..."></textarea></td>
-								</tr>
-								<tr>
-									<td colspan="2"><input class="submit" type="submit" value="Submit"></td>
-								</tr>
-							</table>
-						</form>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="contacticom">
-							<a href="https://www.linkedin.com/" target="_blank">
-								<img
-								  src="images/linkin.png"
-								  alt="Linkedin"
-								/>
-							  </a>
-							  <a href="https://github.com/" target="_blank">
-								<img
-								  src="images/github.png"
-								  alt="Github"
-								/>
-								</a>
-								<a href="https://www.facebook.com/" target="_blank">
-									<img
-									  src="images/facebook.png"
-									  alt="Facebook"
-									/>
-								</a>
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
-  </body>
+
+
+
+
+
+    
 </html>

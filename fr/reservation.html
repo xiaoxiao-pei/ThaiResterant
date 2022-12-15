@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" type="image/png" href="../images/logo.png"/>
+    <!-- link for icon -->
+    <link rel="stylesheet"   href="../font-awesome/css/all.min.css"/>
+    <!-- link for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+    <!-- link for css compiled by scss -->
+    <link rel="stylesheet" href="../styles/main.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="sticky-md-top pb-4" id="header">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-1" >
+                        <a href="../reservation.html" class="icon float-end mx-2 " >En</a>
+                        <a href="address.html" target="_blank" class=" icon float-end mx-2 "><i class="fas fa-map-marked-alt fa-lg "></i></a>
+                        <a href="https://www.facebook.com/TissyBistro/" target="_blank" class="icon float-end mx-2"><i class="fab fa-facebook-square fa-lg" ></i></a>              
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="../images/logo.png" class="w-100" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+                        <ul class="navbar-nav fs-4 fw-bold ">
+                            <li class="nav-item p-1">
+                                <a class="nav-link active" aria-current="page" href="index.html">ACCUEIL</a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a class="nav-link" href="menu.html">MENU</a>
+                            </li>
+                            <li class="nav-item p-1">
+                                <a class="nav-link" href="reservation.html">RÉSERVATION</a>
+                            </li>
+                            
+                            <li class="nav-item p-1">
+                                <a class="nav-link" href="about_us.html">À PROPOS</a>
+                            </li>
+                        </ul>
+                         <a class=" icon position-absolute end-0" href="checkout.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+         
+        <!-- back to top -->
+        <a href="#top" id="backlink" class=" icon"><i class="fas fa-angle-double-up fa-3x"></i></a>    
+    </header> 
+
+    <main id="top">
+        <!-- top image with restaurant name -->
+        <div class="container py-3 rounded " id="reservation">
+            <div id="div-title" class=" bg-light bg-opacity-75  mt-3 p-3 rounded-4 shadow text-center">
+                <h1 class="fs-1" >Bistro de Tissy</h1>
+            </div>
+            <div id="reservation-content" class="py-3">        
+                <div class="bg-light bg-opacity-50 text-center fs-3 fw-bold mb-5 rounded" id="res-banner">
+                    <p>- RÉSERVEZ MAINTENANT -</p>
+                </div>
+                <form class="row pb-3 g-3 bg-light bg-opacity-75 text-dark rounded" id="reservationform">
+                    <div class="col-md-6 form-floating mb-3">                 
+                        <input type="text" class="form-control required shadow-lg" id="firstname" placeholder="John"/>
+                        <label for="firstname" class="form-label">Prenom</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3">
+                        <input type="text" class="form-control required shadow-lg" id="lastname" placeholder="Smitn"/>
+                        <label for="lastname" class="form-label">Nom</label>
+                    </div>                   
+                    <div class="col-md-6 form-floating mb-3">                 
+                        <input type="tel" class="form-control required shadow-lg" id="phonenumber" placeholder="5141231234"/>
+                        <label for="phonenumber" class="form-label">Cellulaire</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3">
+                        <input type="email" class="form-control required shadow-lg" id="email" placeholder="john@smith.net"/>
+                        <label for="email" class="form-label">Couriel</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3">
+                        <input type="number" class="form-control required shadow-lg" min="1" value="1" id="numberofseats">
+                        <label for="numberofseats" class="form-label">Nombre de places</label>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-md-6 form-floating mb-3">
+                        <input type="date" class="form-control required shadow-lg" id="date">
+                        <label for="date" class="form-label">Choisissez une date</label>
+                    </div>
+                    <div class="col-md-6 form-floating mb-3 ">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected disabled hidden> </option>
+                            <option value="1">-- 11:00  am --</option>
+                            <option value="2">-- 11:30  am --</option>
+                            <option value="3">-- 12:00  am --</option>
+                            <option value="4">-- 12:30  am --</option>
+                            <option value="5">--  1:00  pm --</option>
+                            <option value="6">--  1:30  pm --</option>
+                            <option value="7">--  4:00  pm --</option>
+                            <option value="8">--  4:30  pm --</option>
+                            <option value="9">--  5:00  pm --</option>
+                            <option value="10">--  5:30  pm --</option>
+                            <option value="11">--  6:00  pm --</option>
+                            <option value="12">--  6:30  pm --</option>
+                            <option value="13">--  7:00  pm --</option>
+                            <option value="14">--  7:30 pm --</option>
+                          </select>
+                          <label for="time" class="form-label">Choisissez une heure</label>
+                    </div>
+                    <div class="col-md-12 form-floating mb-3">
+                        <textarea name="comments" class="form-control shadow-lg"  id="comments" cols="30" rows="10"></textarea>
+                        <label for="comments" class="form-label">commentaires</label>
+                    </div>
+
+                    <div class="col-12">
+                    <button type="submit" class="btn  btn-block btn-primary shadow-lg">Confirmer</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>        
+    </main>
+
+    <footer class="pb-3 mb-3">
+        <div class="conteiner ">
+            <ul class="nav justify-content-center p-2 bg-dark mb-2">
+                <li class="nav-item">
+                  <a class="nav-link fs-5 text-white mx-5" href="terms_conditions.html">-Termes et Conditions-</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 text-white mx-5" href="policy.html">-Politique de confidentialité</a>
+                </li>
+            </ul>
+            <div class="text-white p-2 bg-dark">
+                <p class="text-center fs-3">BIENVENUE!!!</p>
+                <p class="text-center"><i class="fas fa-location-arrow"></i> 132 Avenue SaintLouis, Beaconsfild, Quebec</p>
+                <p class="text-center"><i class="fas fa-clock"></i> Horaires d'ouvertures:11:00 AM ~ 6:00 PM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>

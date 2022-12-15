@@ -1,0 +1,74 @@
+/* include partial section */ /* declare colors */
+/* font families */
+/*
+    iPhone 5S is an example of a Breakpoint 1 with 320px
+    iPhone 6+ is an example of a Breakpoint 2 with 414px
+    iPad Mini is an example of a Breakpoint 3 with 703px
+    iPad Air is an example of a Breakpoint 4 with 768px
+*/
+body {
+  background-color: rgba(253, 241, 133, 0.2039215686);
+}
+
+header {
+  background-color: white;
+}
+header .navbar-brand {
+  width: 7vh;
+}
+header .icon {
+  color: darkblue;
+}
+header #backlink {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+#header_image {
+  height: 20vh;
+  background-image: url(../images/headerImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#div-title {
+  width: 60%;
+  font-family: Pacifico;
+}
+
+/* styles for menu */
+.accordion {
+  margin-left:15%;
+  background:transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+.card-footer input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+
+/* styles for reservation */
+#reservation {
+  background-image: url(../images/reservation-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#reservation #div-title {
+  margin: 0 auto;
+}
+#reservation #reservation-content {
+  margin: 0 10%;
+}/*# sourceMappingURL=main.css.map */

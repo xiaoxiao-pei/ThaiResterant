@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order details</title>
+    <link rel="icon" type="image/png" href="images/logo.png"/>
+    <!-- link for icon -->
+    <link rel="stylesheet"   href="font-awesome/css/all.min.css"/>
+    <!-- link for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+    <!-- link for css compiled by scss -->
+    <link rel="stylesheet" href="styles/main.css" rel="stylesheet"/>
+
+
+    <script src="scripts/orderDetails.js"></script>
+
+
+</head>
+
+<body onload="showOrder()" style="background-image:url(images/Hero.jpg); background-attachment: fixed; background-repeat: no-repeat;">
+<!-- Header -->
+<header class="sticky-md-top pb-4" id="header" style="background-color:#ffcbd3b7">
+    <div>
+<!-- Top Banner -->
+        <div width="100%" style="top:0px; background-color:#371e17e4; height: 28px; overflow:hidden;">
+            <a href="address.html" target="_blank" 
+                style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;
+                padding-left:24.5%;">
+                <i class="fas fa-map-marked-alt fa-lg" style="text-overflow:clip;"></i> 
+                &nbsp;132 Avenue St Louis, Beaconsfield, QC
+            </a>
+            <a href="https://www.facebook.com/TissyBistro/" target="_blank" 
+                style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+                <i class="fab fa-facebook-square fa-lg" style="overflow:hidden;"></i> 
+                &nbsp;@TissyBistro 
+             </a>  
+             <a href="#header"
+                style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+                <i class="fas fa-phone" style="overflow:hidden;"></i> 
+                &nbsp;438-725-5512
+             </a>   
+             <a href="#header"
+                style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+                <i class="fas fa-clock"></i>
+                &nbsp;Opening Hours: 11:00 AM ~ 6:00 PM
+             </a>   
+        </div>
+            <a href="fr/menu.html" 
+                style="color: #d9d4a6; text-decoration: none; font-weight:bold; font-size: larger;
+                position: absolute; right: 0%; top: 0%; margin-top: 0px; vertical-align: top; background-color: #371e17; 
+                padding-right:10px; padding-left: 10px; height: 28px;">
+                Fran&#231;ais
+            </a>
+<!-- Logo and Page Selection -->
+        <div>
+<!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/logoSmall.png" alt="Tissy's Bistro" height=132px 
+            style="position:absolute; margin-top: 2px; left:0%;"></a>
+            <div style="margin-left: 160px; padding-top:30px; padding-bottom: 25px;">
+<!-- Navigation (Page Selection)-->
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                style=" border-color:#371e17e4; margin-top: 22px;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+                        <ul class="navbar-nav fs-4 fw-bold" style="width:55%; text-align:center; margin-left: -13px;" >
+                            <li class="nav-item" style = "font-size: 75%; padding: 5px; margin: 10px;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+                                <a class="nav-link active" aria-current="page" href="index.html"
+                                style="color:#000000c2" onMouseOver="this.style.color='#888147'" onMouseOut="this.style.color='#000000c2'">HOME</a>
+                            </li>
+                            <li class="nav-item" style = "font-size: 75%; padding: 5px; margin: 10px;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+                                <a class="nav-link" href="menu.html"
+                                style="color:#5d5d5dda" onMouseOver="this.style.color='#371e17e4'" onMouseOut="this.style.color='#5d5d5dda'">MENU</a>
+                            </li>
+                            <li class="nav-item" style = "font-size: 75%; padding: 5px; margin: 10px;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+                                <a class="nav-link" href="reservation.html"
+                                style="color:#5d5d5dda" onMouseOver="this.style.color='#371e17e4'" onMouseOut="this.style.color='#5d5d5dda'">RESERVATION</a>
+                            </li>
+                            
+                            <li class="nav-item" style = "font-size: 75%; padding: 5px; margin: 10px;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+                                <a class="nav-link" href="about_us.html"
+                                style="color:#5d5d5dda" onMouseOver="this.style.color='#371e17e4'" onMouseOut="this.style.color='#5d5d5dda'">ABOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>  
+            </div>
+            
+<!-- Checkout Icon -->
+<a href="orderDetails.html"
+style="color: #371e17e4; background-color: rgba(255, 255, 255, 0.703); padding: 24px; border-radius: 10px;
+position: absolute; right: 30px; top:65px;">
+    <i class="fas fa-shopping-cart fa-2x" onclick="CalTotalOrdered()"></i>
+</a>
+            </div>        
+        </div>   
+    </header> 
+
+    <main id="top" style="background-color:#fff8bca7;">
+        <!-- top image with restaurant name -->
+        <div class="container position-relative rounded shadow" id="header_image">
+            <div id="div-title" class="position-absolute top-50 start-50 translate-middle bg-light bg-opacity-75 p-3 rounded-4 shadow text-center">
+                <h1 class="fs-1" >Tissy's Bistro</h1>
+            </div>
+        </div>
+
+        <div class="container py-5">
+            <table class="container" id="ordersTable" style="background-color:rgba(255, 255, 255, 0.703); border-radius:10px;">
+            </table>
+            <div class="text-center mt-5">
+                <a href="menu.html"><i class="fas fa-angle-double-left fa-lg" style = "color: #5b3126e4;"></i></a>
+                &nbsp&nbsp&nbsp&nbsp
+                <a href="checkout.html"><i class="fas fa-angle-double-right fa-lg" style = "color: #5b3126e4;"></i></a>
+            </div> 
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+
+    <footer width="100%" style="background-color:#371e17e4; overflow: hidden; height: 40px;">
+        <a href="terms_conditions.html" target="_blank" 
+            style= "margin: 25px; margin-top: 50px; vertical-align: sub;
+            color: #d9d4a6; text-decoration: none; font-size: large; overflow: hidden;">
+            -&nbsp;Terms & Conditions&nbsp;-
+        </a>
+        <a href="privacy.html" target="_blank" 
+            style="margin: 25px; vertical-align: sub; 
+            color: #d9d4a6; text-decoration: none; font-size: large; overflow: hidden;">
+            -&nbsp;Privacy Policy&nbsp;-
+         </a>  
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

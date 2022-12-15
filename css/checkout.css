@@ -1,0 +1,220 @@
+
+/*Remove arrows from number input*/            
+            input::-webkit-outer-spin-button.payment,
+            input::-webkit-inner-spin-button.payment {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            input[type=number].payment {
+                -moz-appearance: textfield;
+            }
+
+/*General page*/
+            #checkout {
+                background-color: #fdf18534;
+            }
+
+            div.page {
+                margin-left: 7.5%;
+                margin-right: 7.5%;
+                width: 85%;
+            }
+
+            form {
+                margin-bottom: 5%;
+            }
+
+/*Header*/
+            header {
+                text-align: center;
+                width:100%;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size:large;
+                font-weight: bold;
+                height: 100px;
+            }
+    /*Checkout Banner*/
+            div.checkoutbanner {
+                background-image: url(../images/Hero.jpg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment:fixed;
+                text-align: center;
+                height: 150px;
+                margin-left: 2.5%;
+                margin-right:2.5%;
+                width:95%;
+                border-radius: 10px;
+            }
+            .bannertext {
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:bold;
+                font-size: larger;
+                background-color: rgba(255, 255, 255, 0.862);
+                border-radius:10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width:30%;
+                margin-left:35%;
+                margin-right:35%;
+                padding-top:10px;
+                padding-bottom:10px;
+                transform: translateY(57px);  
+            }
+
+/*Options (French Button)*/
+            header input[type="submit"], header input[type="button"] {
+                color: #160d0a;
+                background-color: #ffd4846e;
+                border-radius: 5px;
+                padding: 4px;
+            }
+            #options {
+                list-style-type:none;
+                color:#ffd484d3;
+            }
+            
+            #options li:hover {
+                color:#e04e5bf7;
+            }
+            #options button{
+                color: #160d0a;
+                background-color: #ffd484d3;
+                border: solid #4a191e thin;
+                border-radius: 5px;
+                padding: 2px;
+                font-size: medium;
+            }
+            #options button:hover {
+                background-color: #f9be51e0
+            }
+
+            #options button:active {
+                background-color: #f9be51e0;
+                box-shadow: 0 1px #666;
+                transform: translateY(2px);
+            }
+
+/*Inner tables (boxes)*/  
+            table.inner {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                float: center;
+                margin-top: 20px;
+                padding: 2%;
+                width: 80%;  
+                margin-left: 10%;
+                margin-right: 10%;  
+            }
+
+            th {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 125%;
+                font-weight: 600;
+                text-align: left;
+                color:#ec515e96;
+                padding-top: 10px;
+                text-indent: 10px;
+                vertical-align: middle;
+            }
+
+            td {
+                padding: 10px;
+                padding-right: 15px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+/* Inputs */
+            input[type="text"], input[type="number"],
+            input[type="date"], input[type="time"],
+            input[type="email"], input[type="tel"],
+            select, textarea {
+                width: 100%;
+                border-radius:5px;
+                margin-top: 2px;
+                padding: 8px;
+                border: solid #4a191e thin;
+            }
+
+            select {
+                background-color: rgb(237, 237, 237);
+            }
+
+            table.inner input[type="submit"], table.inner input[type="button"] {
+                color: #160d0a;
+                background-color: #ffd484d3;
+                border: solid #4a191e thin;
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+            input[type="submit"]:hover, input[type="button"]:hover {
+                background-color: #f9be51e0
+            }
+
+            input[type="submit"]:active, input[type="button"]:active {
+                background-color: #f9be51e0;
+                box-shadow: 0 1px #666;
+                transform: translateY(2px);
+            }
+
+            label {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight:300;
+                color:#160d0abe;
+            }
+
+            label.bold {
+                font-weight:600;
+            }
+
+/*Order Summary */
+            #order {
+                width:80%;
+                margin-left:10%;
+                margin-right:10%;
+                padding:5px;
+                font-weight:500;
+                font-size:large;
+                color: #4a191edf;
+            }
+
+            div.summary {
+                width: 80%;  
+                margin-left: 10%;
+                margin-right: 10%;  
+            }
+
+            div.summary tr:nth-child(even) {
+                background-color: #fdf18534;
+            }
+
+            tr.total {
+                font-weight: bold;
+            }
+            td.math {
+                text-align: right;
+            }
+
+/* Footer */
+            footer {
+                background-color: #160d0a;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }            
+            footer table {
+                width:100%;
+                text-align:center;
+            }
+            footer a, footer td {
+                color: white;
+                text-align: left;
+            }
+
+            /* javascript part: added focus */
+
+            input:focus {
+                background-color: lightblue;
+
+            }

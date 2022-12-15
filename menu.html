@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" type="image/png" href="images/logo_icon.png" />
+    <!-- link for icon -->
+    <link rel="stylesheet" href="font-awesome/css/all.min.css" />
+    <!-- link for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- link for css compiled by scss -->
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    
+    <script src="scripts/menu.js" defer></script>
+    
+</head>
+
+<body style="background-image:url(images/Hero.jpg); background-attachment: fixed; background-repeat: no-repeat;"
+    onload="startup()">
+    <!-- Header -->
+    <header class="sticky-md-top pb-4" id="header" style="background-color:#ffcbd3b7">
+            <!-- Top Banner -->
+            <div style="top:0px; background-color:#371e17e4; height: 28px; overflow:hidden;">
+                <a href="address.html" target="_blank" style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;
+                    padding-left:24.5%;">
+                    <i class="fas fa-map-marked-alt fa-lg" style="text-overflow:clip;"></i>
+                    &nbsp;132 Avenue St Louis, Beaconsfield, QC
+                </a>
+                <a href="https://www.facebook.com/TissyBistro/" target="_blank"
+                    style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+                    <i class="fab fa-facebook-square fa-lg" style="overflow:hidden;"></i>
+                    &nbsp;@TissyBistro
+                </a>
+                <a href="#header"
+                    style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+                    <i class="fas fa-phone" style="overflow:hidden;"></i>
+                    &nbsp;438-725-5512
+                </a>
+                <a href="#header"
+                    style="vertical-align: top; margin: 25px; color: #d9d4a6; text-decoration: none; overflow:hidden;">
+                    <i class="fas fa-clock"></i>
+                    &nbsp;Opening Hours: 11:00 AM ~ 6:00 PM
+                </a>
+            </div>
+            <a href="fr/menu.html" style="color: #d9d4a6; text-decoration: none; font-weight:bold; font-size: larger;
+                    position: absolute; right: 0%; top: 0%; margin-top: 0px; vertical-align: top; background-color: #371e17; 
+                    padding-right:10px; padding-left: 10px; height: 28px;">
+                Fran&#231;ais
+            </a>
+            <!-- Logo and Page Selection -->
+            <div>
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html"><img src="images/logoSmall.png" alt="Tissy's Bistro"
+                        height=132px style="position:absolute; margin-top: 2px; left:0%;"></a>
+                <!-- Navigation (Page Selection)-->
+                <div style="margin-left: 160px; padding-top:30px; padding-bottom: 25px;">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation" style=" border-color:#371e17e4; margin-top: 22px;">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+                            <ul class="navbar-nav fs-4 fw-bold"
+                                style="width:55%; text-align:center; margin-left: -13px;">
+                                <li class="nav-item" style="font-size: 75%; padding: 5px; margin: 10px;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+                                    <a class="nav-link active" aria-current="page" href="index.html"
+                                        style="color:#000000c2" onMouseOver="this.style.color='#888147'"
+                                        onMouseOut="this.style.color='#000000c2'">HOME</a>
+                                </li>
+                                <li class="nav-item" style="font-size: 75%; padding: 5px; margin: 10px;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+                                    <a class="nav-link" href="menu.html" style="color:#5d5d5dda"
+                                        onMouseOver="this.style.color='#371e17e4'"
+                                        onMouseOut="this.style.color='#5d5d5dda'">MENU</a>
+                                </li>
+                                <li class="nav-item" style="font-size: 75%; padding: 5px; margin: 10px;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+                                    <a class="nav-link" href="reservation.html" style="color:#5d5d5dda"
+                                        onMouseOver="this.style.color='#371e17e4'"
+                                        onMouseOut="this.style.color='#5d5d5dda'">RESERVATION</a>
+                                </li>
+
+                                <li class="nav-item" style="font-size: 75%; padding: 5px; margin: 10px;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            background-color:rgba(255, 255, 255, 0.703); border-radius: 10px;">
+                                    <a class="nav-link" href="about_us.html" style="color:#5d5d5dda"
+                                        onMouseOver="this.style.color='#371e17e4'"
+                                        onMouseOut="this.style.color='#5d5d5dda'">ABOUT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Checkout Icon -->
+                <a href="orderDetails.html" style="color: #371e17e4; background-color: rgba(255, 255, 255, 0.703); padding: 24px; border-radius: 10px;
+position: absolute; right: 30px; top:65px;">
+                    <i class="fas fa-shopping-cart fa-2x" onclick="CalTotalOrdered()"></i>
+                </a>
+            </div>
+        <!-- back to top -->
+        <a href="#top" id="backlink" class=" icon" style="color: #371e17e4;"><i
+                class="fas fa-angle-double-up fa-3x"></i></a>
+    </header>
+
+    <main id="top" style="background-color:#fff8bca7;">
+        <!-- Restaurant Name Banner -->
+        <div class="container position-relative rounded shadow" id="header_image">
+            <div id="div-title"
+                class="position-absolute top-50 start-50 translate-middle bg-light bg-opacity-75 p-3 rounded-4 shadow text-center">
+                <h1 class="fs-1">Menu</h1>
+            </div>
+        </div>
+        <!-- Meal Type Navbar -->
+        <div style="margin-left:33%; padding-top: 9px;">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation" style="margin-left:20%; border-color:#371e17e4;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse position-relative" id="navbarNavDropdown">
+                    <ul class="navbar-nav fs-4 fw-bold" style="width:30%; text-align:center; margin-left: 40px;">
+                        <li class="nav-item"
+                            style="font-size: 75%; font-weight:lighter; padding: 5px; vertical-align: middle;
+                        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            <a class="nav-link active" aria-current="page" href="#appetizers" style="color:#5d5d5dda"
+                                onMouseOver="this.style.color='#371e17e4'"
+                                onMouseOut="this.style.color='#5d5d5dda'">APPETIZERS</a>
+                        </li>
+                        <li class="nav-item"
+                            style="font-size: 75%; font-weight:lighter; padding: 5px; vertical-align: middle;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            <a class="nav-link" href="#SALAD" style="color:#5d5d5dda"
+                                onMouseOver="this.style.color='#371e17e4'"
+                                onMouseOut="this.style.color='#5d5d5dda'">SALAD</a>
+                        </li>
+                        <li class="nav-item"
+                            style="font-size: 75%; font-weight:lighter; padding: 5px; vertical-align: middle;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            <a class="nav-link" href="#soups" style="color:#5d5d5dda"
+                                onMouseOver="this.style.color='#371e17e4'"
+                                onMouseOut="this.style.color='#5d5d5dda'">SOUPS</a>
+                        </li>
+
+                        <li class="nav-item"
+                            style="font-size: 75%; font-weight:lighter; padding: 5px; vertical-align: middle;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            <a class="nav-link" href="#maindishes" style="color:#5d5d5dda"
+                                onMouseOver="this.style.color='#371e17e4'"
+                                onMouseOut="this.style.color='#5d5d5dda'">MAIN DISHES</a>
+                        </li>
+
+                        <li class="nav-item"
+                            style="font-size: 75%; font-weight:lighter; padding: 5px; vertical-align: middle;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            <a class="nav-link" href="#desserts" style="color:#5d5d5dda"
+                                onMouseOver="this.style.color='#371e17e4'"
+                                onMouseOut="this.style.color='#5d5d5dda'">DESSERTS</a>
+                        </li>
+
+                        <li class="nav-item"
+                            style="font-size: 75%; font-weight:lighter; padding: 5px; vertical-align: middle;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                            <a class="nav-link" href="#extras" style="color:#5d5d5dda"
+                                onMouseOver="this.style.color='#371e17e4'"
+                                onMouseOut="this.style.color='#5d5d5dda'">EXTRAS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <hr style="color:#5d5d5da0; margin:6px;">
+
+        <!-- menu for APPERIZERS -->
+        <button class="container accordion">APPETIZERS</button>
+        <div class="container mb-3 py-3 border-bottom " id="appetizers">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 gx-sm-20">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/springroll.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Thai Spring Roll</h5>
+                            <p class="card-text">Chicken and shrimp stir fried with mushroom , carrot, glass noodle, and
+                                onion. Seasoned with homemade Thai sauce.</p>
+                            <p class="price">$10.50</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="springroll">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" id="springroll"
+                                            class="w-100" onchange="checkQuantity(1)" />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(1)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/porkBBQ.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Thai-style Pork BBQ (Moo Ping)</h5>
+                            <p class="card-text">Pork shoulder marinated with Thai herbs and coconut milk.</p>
+                            <p class="price">$2.50</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="porkBBQ">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" id="porkBBQ"
+                                            class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(2)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chickensatay.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Satay with Peanut Sauce</h5>
+                            <p class="card-text">Marinated with coconut milk and turmeric powder. Served with peanut and
+                                pickle sauce.</p>
+                            <p class="price">$3.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="chickensatay">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" id="chickensatay"
+                                            class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(3)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- menu for salad -->
+        <button class="container accordion">SALAD</button>
+        <div class="container mb-3 py-3 border-bottom" id="SALAD">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 gx-sm-20">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/somtum.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Som Tum (Spicy Thai Papaya Salad)</h5>
+                            <p class="card-text">Green papaya salad with cherry tomato homemade. Spiced up with Thai
+                                herbal dressing and fish sauce.</p>
+                            <p class="price">$9.50</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(4)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- menu for soups -->
+        <button class="container accordion">SOUPS</button>
+        <div class="container mb-3 py-3 border-bottom" id="soups">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 gx-sm-20">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/tomyumkung.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tom Yum Kung (Thai tom-yum soup with shrimps)</h5>
+                            <p class="card-text">Spicy and sour soup with shrimps, mushroom tomato, galangal, kaffir
+                                lime leaves, lemongrass, coriander. Spicy. Served with rice</p>
+                            <p class="price">$10.50</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(5)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/tomkhakai.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tom Kha Kai (Thai herbal coconut soup with chicken)</h5>
+                            <p class="card-text">Chicken, lemongrass, Galangal, kaffir lime leaves with coconut milk
+                                served with rice.</p>
+                            <p class="price">$8.95</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(6)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/wonton.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wonton Soup</h5>
+                            <p class="card-text">Chicken wonton, bok choy with shrimp tempura ,clear soup.</p>
+                            <p class="price">$3.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(7)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- menu for main dishes -->
+        <button class="container accordion">MAIN DISHES</button>
+        <div class="container mb-3 py-3 border-bottom" id="maindishes">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 gx-sm-20">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/shrimppadthai.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Shrimp Pad Thai</h5>
+                            <p class="card-text">Thai-style, stirred fried rice noodles with shrimp, tofu, peanuts, bean
+                                sprouts. Seasoned with refreshing tamarind sauce</p>
+                            <p class="price">$19.95</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(8)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/chickenpadthai.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Pad Thai </h5>
+                            <p class="card-text">Thai-style, stirred fried rice noodles with chicken, peanuts, bean
+                                sprouts. Seasoned with refreshing tamarind sauce.</p>
+                            <p class="price">$17.95</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(9)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/toufupad.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tofu Pad Thai</h5>
+                            <p class="card-text">Thai-style, stirred fried rice noodles with tofu, peanuts, bean
+                                sprouts. Seasoned with refreshing tamarind sauce.</p>
+                            <p class="price">$16.50</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(10)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/greencurrychichken.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Curry Chicken (Keaw Wan Gai)</h5>
+                            <p class="card-text">Chicken, green curry paste, coconut milk and vegetables. Seasoned with
+                                fish sauce and palm sugar. Serves on rice.</p>
+                            <p class="price">$17.95</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(11)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/stirfriedpork.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Stir-Fried Pork with Basil (Kra-pao moo Kai Dao)</h5>
+                            <p class="card-text">Stir fried pork minced basil with homemade spicy sauce. Served with
+                                fried eggs and jasmine rice.</p>
+                            <p class="price">$17.95</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(12)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/thaifriedschrimp.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Thai Fried Rice Shrimp</h5>
+                            <p class="card-text">Stir fried Jasmine rice with shrimp, carrot, tomato, onion, and
+                                coriander.</p>
+                            <p class="price">$18.95</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(13)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/stirfriedchicken.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Stir Fried Chicken with Cashew nuts</h5>
+                            <p class="card-text">Chicken stir fried with cashews, chili, bell pepper, onion, and green
+                                onions served with jasmine rice.</p>
+                            <p class="price">$17.95</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(14)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- menu for desserts -->
+        <button class="container accordion">DESSERTS</button>
+        <div class="container mb-3 py-3 border-bottom" id="desserts">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 gx-sm-20">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/mango.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Thai Mango Sticky Rice</h5>
+                            <p class="card-text">Thai-favorite mango sticky rice. Topped with coconut milk.</p>
+                            <p class="price">$9.95</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(15)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- menu for extras -->
+        <button class="container accordion">EXTRAS</button>
+        <div class="container mb-3 py-3" id="extras">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 gx-sm-20">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/rice.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Extra Rice</h5>
+                            <p class="card-text">Jasmine white rice</p>
+                            <p class="price">$3.00</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="container">
+                                <form action="post" class="row mt-1 align-items-center">
+                                    <div class="col-3   py-2">
+                                        <label for="num-tomyumkung">Quantity:</label>
+                                    </div>
+                                    <div class="col-3  ">
+                                        <input type="number" name="quantity" min="0" max="20" class="w-100 " />
+                                    </div>
+                                    <div class="col-6 p-2 justify-content-end">
+                                        <button type="button" class="btn btn-lg btn-block cart-button "
+                                            onclick="addItem(16)">
+                                            Add to Cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer width="100%" style="background-color:#371e17e4; overflow: hidden; height: 40px;">
+        <a href="terms_conditions.html" target="_blank" style="margin: 25px; margin-top: 50px; vertical-align: sub;
+                color: #d9d4a6; text-decoration: none; font-size: large; overflow: hidden;">
+            -&nbsp;Terms & Conditions&nbsp;-
+        </a>
+        <a href="privacy.html" target="_blank" style="margin: 25px; vertical-align: sub; 
+                color: #d9d4a6; text-decoration: none; font-size: large; overflow: hidden;">
+            -&nbsp;Privacy Policy&nbsp;-
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

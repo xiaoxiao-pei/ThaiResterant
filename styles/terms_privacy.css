@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+
+body {
+    font-family: sans-serif;
+    background-color: rgba(253, 241, 133, 0.2039215686);
+    padding-top: 45px;
+    font-weight: 500;
+    font-size: larger;
+}

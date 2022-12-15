@@ -1,0 +1,66 @@
+/* include partial section */
+@import './variables';
+
+// set background cover and no-repeat
+@mixin bg-cover-norepeat{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//float to right bottom conner
+@mixin rb-conner{
+    position: fixed; 
+    right: 20px;
+    bottom: 20px;
+}
+
+// get width in percentage
+@function w($width-percentage){
+    @return map-get($width, $width-percentage);
+}
+
+// styles for all pages
+body{
+    background-color: $background-color;
+}
+// styles for header
+header{
+    background-color: white;
+    .navbar-brand {
+        width:7vh;
+    }
+    .icon{
+    color: $icon-color;
+    }
+    
+    #backlink{
+        @include rb-conner;
+    }
+}
+#header_image {
+        height: 20vh;
+        background-image:url(../images/headerImage.jpg);
+        @include bg-cover-norepeat;
+    }
+    #div-title{
+        width: w("60");
+        font-family: map-get($map: $font-families, $key:"fantasy");
+    }
+
+/* styles for menu */
+.card-footer input[type=number]::-webkit-inner-spin-button{ 
+    opacity: 1;
+}
+
+
+/* styles for reservation */
+#reservation{
+    background-image:url(../images/reservation-bg.jpg); 
+    @include bg-cover-norepeat;
+    #div-title{
+        margin: 0 auto;
+    }
+    #reservation-content{
+        margin: 0 10%;
+    }
+}

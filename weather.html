@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="weatherBox">
+
+    </div>
+    <script>
+
+    function getWeather() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            console.log(this.responseText); 
+        }
+        xhttp.open("GET", "https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=c0da938e78d0ea08c9b3f1ddaa327f0d");
+        xhttp.send();
+    }
+
+    getWeather();
+        
+    </script>
+</body>
+</html>
